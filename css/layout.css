@@ -1,0 +1,74 @@
+body{
+  box-sizing: border-box;
+  font-size: 12px;
+}
+#nav, #menu, #users, #news, footer{
+  border: 2px solid black;
+padding: 0;
+  margin: 3px;
+}
+#nav{
+  background-color: #C70039;
+}
+#menu{
+  background-color: #FFC300;
+
+}
+#users{
+  background-color: #DAF7A6;
+}
+#news{
+  background-color: #72A9A7;
+}
+footer{
+  text-align: center;
+  background-color: #95A972;
+}
+main{
+  display: flex;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+.flexr{
+  display: flex;
+  flex-direction: row;
+}
+.souligner{
+  border-bottom: 2px solid black;
+}
+img{
+  width: 80px;
+  max-width: 100%;
+  height: 80px;
+  max-height: 100%;
+}
+select{
+  float: right;
+
+}
+@media screen and (max-width: 768px) {
+  #news{
+    display: none;
+  }
+  #menu{
+    height: 270px;
+    max-height: 270px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main{
+  flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  #menu{
+    height: 270px;
+    max-height: 270px;
+  }
+  #news{
+    height: 500px ;
+    max-height: 500px ;
+  }
+}
