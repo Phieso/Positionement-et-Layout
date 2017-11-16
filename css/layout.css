@@ -1,11 +1,12 @@
+/*LA POLICE FERA 12PX SUR TOUTE LA PAGE*/
 body{
-
   font-size: 12px;
 }
+/*Faire en sorte que mes paddings et margins ne changent pas la taille de la page*/
 *{
   box-sizing: border-box;
 }
-              /* BORDER ET POSITION DES RECTANGLES*/
+/* Création des border de chaque block et margin pour avoir de l'espace entre eux*/
 #nav, #menu, #users, #news, footer{
   border: 2px solid grey;
 padding: 0;
@@ -30,20 +31,22 @@ box-shadow: inset 0px 5px 10px #044545;
   box-shadow: inset 3px -3px 10px #044545;
 }
 footer{
-  text-align: center;
   background-color: #95A972;
 }
                   /* POSITIONNEMENT*/
 main, #nav{
   display: flex;
 }
+/*Ici je peux utiliser justify-content car j'ai utilisé flex dans la #nav*/
 #nav{
   justify-content: space-between;
 }
+/*Je crée une classe qui me permet d'appliquer flex en direction colomne*/
 .flex{
   display: flex;
   flex-direction: column;
 }
+/*Je crée une classe qui me permet d'appliquer flex en direction ligne*/
 .flexr{
   display: flex;
   flex-direction: row;
@@ -69,6 +72,8 @@ select{
 }
 
                   /*MEDIA QUERY*/
+/*Ce qui est contenu dans cette partie s'effectura seulement
+sur les écrans qui ont une largeur maximale de 768px*/
 @media screen and (max-width: 768px) {
   #news{
     display: none;
@@ -78,6 +83,8 @@ select{
     max-height: 270px;
   }
 }
+/*Ce qui est contenu dans cette partie s'effectura seulement
+sur les écrans qui ont une largeur maximale de 425px*/
 @media screen and (max-width: 425px) {
   main{
   flex-direction: column;
@@ -86,6 +93,8 @@ select{
     flex-direction: column;
   }
 }
+/*Ce qui est contenu dans cette partie s'effectura seulement
+sur les écrans qui ont une largeur minimum de 768px*/
 @media screen and (min-width: 768px) {
   #menu{
     height: 270px;

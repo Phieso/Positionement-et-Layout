@@ -21,8 +21,12 @@
   <body>
 
     <header>
+      <!-- Ici je met mon titre et mon bouton en haut de page -->
     <section id="nav">
+      <!-- Je centre et je donne une couleur "warning"(jaune) à mon titre -->
       <h1 class="text-center text-warning">Adaptive</h1>
+      <!--  Pour un grand écran le select prendra la place de 2colonnes et aura
+    une forme de bouton et et de bouton coloré juste à l'extérieur en jaune-->
       <select class="col-sm-2 btn btn-outline-warning" name="">
         <option value="Adaptive">Adaptive</option>
         <option value="Liquid">Liquid</option>
@@ -33,8 +37,14 @@
     </header>
 
 <main>
+  <!-- Ici la #menu prendra la place de 2 colonnes sur grand écran, 3 sur écran moyen
+et 8 sur petit écra. De plus on lui applique la classe flex créé dans le css et on
+applique une class bootstrap  qui permet de centrer le texte -->
 <section id="menu" class="col-lg-2 col-md-3 col-sm-8 flex text-center">
 
+<!--  Le "my-auto" permet d'appliquer un margin sur l'axe y et que celui-ci
+s'applique automatiquement. On donne ici aussi un aspect de bouton et de bouton
+coloré à l'extérieur seulement de bleu-->
   <select class="my-auto btn btn-outline-primary">
 <option value="Menu 1 a">Menu 1 a</option>
 <option value="Menu 1 ">Menu 1 b</option>
@@ -73,6 +83,8 @@ You can think of Adaptive as a series of Static layouts.</p>
 
 <section class="flexr mx-5 mt-3">
 
+<!-- La classe "rounded" permet d'obtenir des bordures arrondies et "rounded-circle
+d'avoir des bordures qui créer un rond" -->
   <img src="images/profil.png" alt="" class="rounded-circle">
 <div class="flex">
     <h3>Title</h3>
@@ -85,6 +97,8 @@ You can think of Adaptive as a series of Static layouts.</p>
 
 </section>
 
+<!--  J'applique une class "flexr" créé dans le css et j'applique un margin
+sur l'axe x avec une valeur de 5-->
 <section class="flexr mx-5">
 
   <img src="images/profil.png" alt="" class="rounded-circle">
@@ -184,7 +198,7 @@ You can think of Adaptive as a series of Static layouts.</p>
 </section>
 </main>
 
-<footer >
+<footer class="text-center" >
 <p>Built by <a href="#">Nicholas Davinson</a> for <a href="#">Digitaria</a>.</p>
 <p>Copyright <a href="#"></a>Digitaria</p>
 </footer>
